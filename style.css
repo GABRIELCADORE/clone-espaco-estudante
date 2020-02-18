@@ -11,3 +11,68 @@ h5{
     margin: 0 10px 5px 10px;
     color: #9BABB7;
 }
+.login {
+    width: 310px;
+    height: 340px;
+    border: 1px solid black;
+    border-radius: 4px;
+    margin: 80px 0 0 200px;
+    padding: 30px 60px ;
+    text-align: center;
+    
+}
+.inputs_login {
+    width: 300px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 3px;
+    display: flex;
+        }
+        .inputs_login input {
+            height: 28px;
+            border: none;
+            outline: none;
+            margin-left: 3px;
+            width: calc(100% - 16px);
+
+        }
+        .inputs_login i{
+            margin-left: 8px;
+            line-height: 30px;
+        }
+       
+        .inputs_senha{
+            width: 300px;
+            height: 30px;
+            border: 1px solid black;
+            border-radius: 3px;
+            display: flex;
+            margin: 15px 0 0 0;
+        }
+        .inputs_senha input {
+            height: 28px;
+            border: none;
+            outline: none;
+            margin-left: 3px;
+            width: calc(100% - 16px);
+
+        }
+        .inputs_senha i{
+            margin-left: 8px;
+            line-height: 30px;
+        }
+        #btnEntrar{
+            width: 80px;
+            height: 40px;
+            margin: 30px 0 0 0;
+            border: none;
+            background-color: #1E9585;
+            color: #FFF;
+            border-radius: 20px;
+        }
+        #esqueceu{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            margin: 10px 10px 5px 10px;
+            color: #9BABB7;
+        }
