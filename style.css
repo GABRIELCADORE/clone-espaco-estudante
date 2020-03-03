@@ -1,4 +1,7 @@
-body {
+html, body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
     background-color: #FFF; font-family: Arial, Helvetica, sans-serif;
 }
 h1{
@@ -76,3 +79,20 @@ h5{
             margin: 10px 10px 5px 10px;
             color: #9BABB7;
         }
+       
+            .banner {
+                width: 520px;
+                height: 80;
+                margin: 40px 200px;
+            }
+            #container {
+                display: flex;
+            }
+            
+            .estudante {
+                width: 100%;
+                height: 560px;
+                background: url('./img/background.png');
+                background-size: cover;
+                background-repeat: no-repeat;
+            }

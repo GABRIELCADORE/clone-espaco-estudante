@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relação da turma do Tec. em Desenvolvimento 
+        de software - 2019/2020.
+    </title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+    <div id="app">
+        <h1>Relação de alunos</h1>
+        <ul>
+            <li v-for="aluno in alunos" style="list-style-type:square;">
+                {{aluno.nome}}
+            </li>
+        </ul>
+        <table style="border: 1px solid grey;">
+            <thead style="color: #dcdcdc;">
+                <th>Código</th>
+                <th>nome</th>
+            </thead>
+            <tbody>
+                <tr v-for="aluno in alunos">
+                    <td>{{aluno.codigo}}</td>
+                    <td>{{aluno.nome}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="caixa">
+        <intup type="text" placeholder="Código">
+        <intup type="text" placeholder="Nome">
+        <button>Salvar</button>
+    </div>
+    <script>
+        let app = new Vue({
+            el: "#app",
+            data: {
+                alunos: [{
+                    codigo:1,
+                    nome: "Alice"
+                }, {
+                    codigo:2,
+                    nome: "Bruna"
+                }, {
+                    codigo:3,
+                    nome: "Gabriel"
+                }]
+            }, methods: {
+                salvar: function(){
+                    this.alunos.push()
+                }
+            }
+            
+        })
+    </script>
+</body>
+</html>
