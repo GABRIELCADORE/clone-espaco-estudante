@@ -11,6 +11,11 @@
 <body>
     <div id="app">
         <h1>Relação de alunos</h1>
+
+        <input type="text" v-model="codigo">
+        <input type="text" v-model="nome">
+        <button v-on:click="salvar">Salvar</button>
+
         <ul>
             <li v-for="aluno in alunos" style="list-style-type:square;">
                 {{aluno.nome}}
@@ -27,30 +32,26 @@
                     <td>{{aluno.nome}}</td>
                 </tr>
             </tbody>
+            <tfoot>
+                <tr v-if="alunos.length == 0">
+                    <td colspan="2">Nenhum aluno cadastrado</td>
+                </tr>
+            </tfoot>
         </table>
-    </div>
-    <div id="caixa">
-        <intup type="text" placeholder="Código">
-        <intup type="text" placeholder="Nome">
-        <button>Salvar</button>
     </div>
     <script>
         let app = new Vue({
             el: "#app",
             data: {
-                alunos: [{
-                    codigo:1,
-                    nome: "Alice"
-                }, {
-                    codigo:2,
-                    nome: "Bruna"
-                }, {
-                    codigo:3,
-                    nome: "Gabriel"
-                }]
+                alunos: [],
+                codigo: '',
+                nome: '' 
             }, methods: {
                 salvar: function(){
-                    this.alunos.push()
+                    this.alunos.push({
+                        codigo: this.codigo,
+                        nome: this.nome
+                    })
                 }
             }
             

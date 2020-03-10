@@ -1,0 +1,27 @@
+body {
+    margin: 0px;
+}
+.menu-superior {
+    margin: 0px;
+    background: black;
+    color: white;
+    height: 250px;
+    width: 160px;
+    justify-content: center;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 10px;
+}
+.menu-superior li {
+    width: 110px;
+    height: 50px;
+    list-style: none;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+.menu-superior li:hover {
+    background: #E94E18;
+    font-style: italic;
+
+
+}

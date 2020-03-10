@@ -1,0 +1,63 @@
+html, body{
+    background-color: rgb(255, 213, 79);
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+#recheio {
+    background-color: rgb(243, 133, 182);
+    width: 200px;
+    height: 130px;
+    margin: 50px auto 0 auto;
+    border-top-left-radius: 120px;
+    border-top-right-radius: 120px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top: 4px solid rgb(244, 152, 189);
+    display: flex;
+    justify-content: center;
+    padding-top: 200px;
+}
+#palito {
+    background-color: rgb(237, 170, 125);
+    width: 60px;
+    height: 90px;
+    margin: auto;
+    border-top: 6px solid rgb(221, 159, 112);
+}
+
+.olhos{
+    width: 20px;
+    height: 20px;
+    background-color: rgb(232, 53, 145);
+    border-radius: 20px;
+}
+#boca{
+    background-color: rgb(232, 53, 145);
+    width: 60px;
+    height: 30px;
+    margin: 20px 20px 10px 20px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.iris{
+    width: 5px;
+    height: 5px;
+    background-color: white;
+    border-radius: 5px;
+    margin: 3px 2px 2px 6px;
+}
+#mancha {
+    background-color: pink;
+    width: 60px;
+    height: 50px;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 52px;
+    border-bottom-left-radius: 54px;
+    border-bottom-right-radius: 12px;
+    position: absolute;
+  top: 100px;
+  left: 700px;
+}
